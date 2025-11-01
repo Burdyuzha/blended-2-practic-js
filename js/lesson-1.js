@@ -1,4 +1,3 @@
-// Запропонуйте користувачу ввести число за допомогою prompt().
 // Збережіть введене значення у змінну number.
 // Перевірте, чи дорівнює змінна number числу 10:
 //    Якщо так – виведіть повідомлення 'Вірно' у alert().
@@ -1041,70 +1040,1704 @@
 
 
 // Створіть змінну price і присвойте їй число. Створіть рядок, що містить ціну з символом гривні, наприклад: "Ціна: 500 грн".
-
+// const price = 280;
+// console.log(`"Ціна: ${price} грн"`)
     
 
 // Створи дві змінні firstName і lastName.
 // Присвой їм своє ім'я та прізвище.
 // Обєднай ці два рядки в один, з пробілом між ними. Запиши результат в змінну fullName.
 // Виведи fullName в консоль.
+
+// const firstName = "Gregory";
+// const lastName = "Burdyuzha";
+// const fullName = firstName + " " + lastName;
+// console.log(fullName);
+
+
 // Створи дві змінні a і b, присвой їм якісь цілі числа.
 // Виконай над ними додавання, віднімання, множення і ділення.
 // Запиши результати в змінні sum, difference, product, quotient.
 // Виведи всі ці результати в консоль.
+
+// const a = 8;
+// const b = 2;
+// const sum = a + b;
+// const difference = a - b;
+// const product = a * b;
+// const quotient = a / b;
+// console.log(`${sum}, ${difference}, ${product}, ${quotient}`);
+
 // Створи змінну radius і присвой їй деяке значення (наприклад, 5).
 // Використай формулу площі кола (π * r²) для обчислення площі кола з радіусом, який було встановлено.
 // Використовуй значення π = 3.14. Запиши результат у змінну area.
 // Виведи area в консоль.
+
+// const radius = 6;
+// const area = Math.PI * radius ** 2;
+// console.log(area);
+
+
 // Створи змінну someString і присвой їй будь-який рядок.
 // Обчисли довжину цього рядка, використовуючи властивість .length.
 // Виведи довжину рядка в консоль.
+
+// const someString = "Виведи довжину рядка в консоль.";
+// const stringLength = someString.length;
+// console.log(stringLength);
+
 // Створи змінну someString і присвой їй будь-який рядок.
 // Створи змінну firstLetter і присвой їй першу літеру рядка someString.
 // Створи змінну lastLetter і присвой їй останню літеру рядка someString.
+
+// const someString = "Отримай з кожної змінної останню літеру";
+// const firstLetter = someString[0];
+// const lastLetter = someString[someString.length - 1];
+// console.log(`${firstLetter} ${lastLetter}`);
+
 // Створи дві змінних str1 та str2.
 // Отримай з кожної змінної останню літеру
 // Створи третю змінну де обєднай попередні літери
 // Приклад: для рядків "HELLO" та "WORLD" результатом буде рядок "OD"
-// Створи змінну userValue та запиши до неї будь-яке число.
+// const str1 = "HELLO";
+// const str2 = "WORLD";
+// const str3 = str1[str1.length - 1] + str2[str2.length - 1];
+// console.log(str3);
 
-// Створи нову змінну до якої потрібно записати результат математичної операції а саме:
-// userValue помножити на число 5 у степені (кількість цифр у змінній userValue).
 
-// Приклади:
-// для числа 1 = 1 * 5^1 = 5;
-// для числа 2 = 2 * 5^1 = 10;
-// для числа 12 = 12 * 5^2 = 300;
-// для числа 512 = 512 * 5^3 = 64000;
 
 // Виведіть на екран загальну кількість яблок і винограду. Різницю яблока і винограду теж виведіть у консоль.
 
 // const apples = 47;
 // const grapes = 135;
-// const total = ;
+// const total = apples + grapes;
 // console.log(total)
-// const diff = ;
+// const diff = grapes - apples;
 // console.log(diff)
 
 // Замінити вираз перевизначення комбінованим оператором `+=`.
 
 
 // let students = 100;
-// students = students + 50;
+// students += 50;
 // console.log(students);
+
 // Розбери пріоритет операторів в інструкції визначення значення змінної
 // `result`.
-
 // const result = 108 + 223 - 2 * 5;
 // console.log(result);
+
 // Склади фразу за допомогою шаблонних рядків `A has B bots in stock`, де A, B -
 // змінні вставлені у рядок.
-
-
 // const companyName = "Cyberdyne Systems";
 // const repairBots = 150;
 // const defenceBots = 50;
-// const message = ``;
+// const sumBots = repairBots + defenceBots;
+// const message = `"${companyName} has ${sumBots} bots in stock"`;
 // console.log(message); // "Cyberdyne Systems has 200 bots in stock"
+
+// Задача-1
+// Напишіть функцію яка приймає два параметри str1 та str2.Функція повинна повернути булеве значення true якщо перша літера str1 дорівнює останій літері str2.В іншому випадку функція повинна повернути булеве значення false.
+    
+// function foo(str1, str2) {
+//     const str1First = str1[0];
+//     const str2Last = str2[str2.length - 1];
+//     if (str1First === str2Last) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("apple", "car"));
+// console.log(foo("dog", "god"));
+// console.log(foo("Hello", "og"));
+
+// Задача-2
+// Напишіть функцію яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true якщо перша літера str1 дорівнює першій літері str2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(str1, str2) {
+//     const str1First = str1[0];
+//     const str2First = str2[0];
+//     if (str1First === str2First) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("apple", "car"));
+// console.log(foo("dog", "dodge"));
+// console.log(foo("Hello", "og"));
+
+
+// Задача-3
+// Напишіть функцію яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true якщо довжина str1 дорівнює довжині str2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(str1, str2) {
+//     const str1Length = str1.length;
+//     const str2Length = str2.length;
+//     if (str1Length === str2Length) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("apple", "car"));
+// console.log(foo("dog", "god"));
+// console.log(foo("Hello", "ogffg"));
+
+
+
+// Задача-5
+// Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true, якщо num1 більше, ніж num2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num1, num2) {
+//     if (num1 > num2) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(5, 3));
+// console.log(foo(12, 7));
+// console.log(foo(4, 4));
+
+
+// Задача-6
+// Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true, якщо num1 ділиться на num2 без остачі. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num1, num2) {
+//     if (num1 % num2 ===0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(5, 3));
+// console.log(foo(14, 7));
+// console.log(foo(4, 4));
+// Задача-7
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є непарним числом. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num) {
+//     if (num % 2 !==0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo( 3));
+// console.log(foo(12));
+// console.log(foo(4));
+
+// Задача-8
+// Напишіть функцію, яка приймає параметр str. Функція повинна повернути булеве значення true, якщо str містить принаймні одну велику літеру. В іншому випадку функція повинна повернути булеве значення false.
+// Підказка: допоможе toLowerCase();
+
+// function foo(str) {
+//     if (str !== str.toLowerCase()) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("hello")); // false
+// console.log(foo("Hello")); // true
+// console.log(foo("123ABC")); // true
+
+
+// Задача-9
+// Напишіть функцію, яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true, якщо довжина str1 більше, ніж довжина str2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(str1, str2) {
+//     const str1Length = str1.length;
+//     const str2Length = str2.length;
+//     if (str1Length > str2Length) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("apple", "car"));
+// console.log(foo("dogl", "god"));
+// console.log(foo("Hello", "ogffg"));
+
+// Задача-12
+// Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true, якщо str містить хоча б один пробіл. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(str) {
+//     if (str.includes(" ")) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("apple car"));
+// console.log(foo("dog god"));
+// console.log(foo("Helloogffg"));
+
+
+// Задача-15
+// Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true, якщо num1 менше або дорівнює num2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num1, num2) {
+//     if (num1 <= num2) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(5, 3));
+// console.log(foo(4, 7));
+// console.log(foo(4, 4));
+
+
+// Задача-19
+// Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true, якщо num1 і num2 рівні. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num1, num2) {
+//     if (num1 === num2) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(5, 3));
+// console.log(foo(4, 7));
+// console.log(foo(4, 4));
+// Задача-20
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num більше або дорівнює нулю. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num) {
+//     if (num >= 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(0));
+// console.log(foo(-2));
+// console.log(foo(5));
+
+
+// Задача-21
+// Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true, якщо довжина str є парною. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(str) {
+//     const strLength = str.length;
+//     if (strLength % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("В іj"));
+
+
+// Задача-22
+// Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true, якщо num1 ділиться на 2, а num2 не ділиться на 2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num1, num2) {
+//     if (num1 % 2 === 0 && num2 % 2 !==0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(4, 5));
+// console.log(foo(4, 6));
+// console.log(foo(3, 5));
+
+
+// Задача-23
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num більше 100, але менше 200. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num) {
+//     if (num > 100 && num < 200) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(150));
+// console.log(foo(130));
+// console.log(foo(250));
+// console.log(foo(100));
+// console.log(foo(200));
+
+
+// Задача-24
+// Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true, якщо str містить лише маленькі літери. В іншому випадку функція повинна повернути булеве значення false.
+// Підказка: допоможе toLowerCase();
+// function foo(str) {
+//     if (str === str.toLowerCase()) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("hello"));
+// console.log(foo("Hello"));
+// console.log(foo("world123"));
+// console.log(foo("WORLD"));
+
+// Задача-25
+// Напишіть функцію, яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true, якщо str1 є частиною str2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(str1, str2) {
+//     if (str2.includes(str1)) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo("cat", "concatenate"));
+// console.log(foo("dog", "concatenate"));
+
+
+// Задача-26
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є негативним числом. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num) {
+//     if (num < 0) {
+//         return true;
+//     } else {
+//       return false;
+//     }
+// }
+// console.log(foo(-5));
+// console.log(foo(0));
+// console.log(foo(10));
+
+
+// Задача-27
+// Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true, якщо різниця між num1 та num2 більше 50. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num1, num2) {
+//     if (num1 - num2 > 50 || num2 - num1 > 50) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(foo(120, 60)); // true
+// console.log(foo(80, 40));  // false
+// console.log(foo(10, 70));  // true
+
+// Задача-28
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є нуль. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num) {
+//     return num === 0;
+// }
+// console.log(foo(0));
+// console.log(foo(5));
+// console.log(foo("0"));
+// console.log(foo(-10));
+
+
+// Задача-30
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є кратним 10. В іншому випадку функція повинна повернути булеве значення false.
+
+// function foo(num) {
+//     return num % 10 === 0;
+// }
+// console.log(foo(20));
+// console.log(foo(15));
+// console.log(foo(0));
+
+
+// Task 2
+// Яким буде результат виразів?
+
+// console.log(5 > 4);
+
+// console.log(10 >= '7');
+
+// console.log('2' > '12');
+
+// console.log('2' < '12');
+
+// console.log('4' == 4);
+
+// console.log('6' === 6);
+
+// console.log('false' === false);
+
+// console.log(1 == true);
+
+// console.log(1 === true);
+
+// console.log('0' == false);
+
+// console.log('0' === false);
+
+// console.log('Papaya' < 'papaya');
+
+// console.log('Papaya' === 'papaya');
+
+// console.log(undefined == null);
+
+// console.log(undefined === null);
+
+// модуль №2
+
+// Задача-1
+// Напишіть функцію для охоронця нічного клубу яка приймає два параметри age та balance. Функція повинна повернути рядок "Wellcome" якщо age більший за 18 та balance більший за 100. В іншому випадку функцію повинна повернути рядок "Goodbye".
+
+// function foo(age, balance) {
+//     if (age >= 18 && balance > 100) {
+//         return "Wellcome";
+//     } else {
+//         return "Goodbay";
+//     }
+// }
+// console.log(foo(20, 150));
+// console.log(foo(17, 150));
+// console.log(foo(25, 50));
+// console.log(foo(30, 850));
+
+// Задача-2
+// Напишіть функцію яка для магазину яка приймає кількість товару (amount) та його вартість (price). Функція повинна повернути рядок "Ми це купуємо" якщо загальна вартість не перевищує 1000, в іншому випадку функція повинна повернути рядок "Це занадто дорого".
+
+// function foo(amount, price) {
+//     const sum = amount * price;
+//     if (sum <= 1000) {
+//         return "Ми це купуємо";
+//     } else {
+//         return "Це занадто дорого";
+//     }
+// }
+// console.log(foo(5, 150));
+// console.log(foo(10, 200));
+
+// Задача-3
+// Напишіть функцію, яка приймає температуру (temp) в градусах Цельсія. Якщо температура нижче 0, функція повинна повернути рядок "Замерзає", якщо більше 0 але менше 25 - "Нормальна температура", якщо більше 25 - "Спекотно".
+
+// function foo(temp) {
+//     if (temp <= 0) {
+//         return "Замерзає";
+//     } else if (temp > 0 && temp <= 25){
+//         return "Нормальна температура";
+//     } else if(temp > 25){
+//         return "Спекотно";
+//     }
+// }
+// console.log(foo(-5));
+// console.log(foo(10));
+// console.log(foo(30));
+// console.log(foo(0));
+// console.log(foo(25));
+
+
+// Задача-4
+// Напишіть функцію, яка приймає 2 числа: number та divisor. Якщо number ділиться на divisor без остатку, поверніть рядок "Ділиться", в іншому випадку поверніть "Не ділиться".
+
+// function foo(number, divisor) {
+//     if (number % divisor === 0) {
+//         return "Ділиться";
+//     } else {
+//         return "Не ділиться";
+//     }
+// }
+// console.log(foo(10, 2));
+// console.log(foo(10, 3));
+
+// Задача-5
+// Напишіть функцію, яка приймає 2 параметри: isRaining (булевий) і hasUmbrella (булевий). Якщо дощить і у вас є парасоля, поверніть "Не змокнеш", якщо дощить і немає парасолі, поверніть "Змокнеш", в іншому випадку поверніть "Без дощу".
+
+// function foo(isRaining, hasUmbrella) {
+//     if (isRaining && hasUmbrella) {
+//         return "Не змокнеш";
+//     } else if (isRaining  && !hasUmbrella) {
+//         return "Змокнеш";
+//     } else {
+//         return "Без дощу";
+//     }
+// }
+// console.log(foo(true, true));
+// console.log(foo(true, false));
+// console.log(foo(false, true));
+// console.log(foo(false, false));
+
+
+// Задача-6
+// Напишіть функцію, яка приймає оцінку студента (grade) за шкалою від 0 до 100. Якщо оцінка 90 і більше, поверніть "Відмінно", від 75 до 89 - "Добре", від 50 до 74 - "Задовільно", нижче 50 - "Незадовільно".
+
+// function foo(grade) {
+//     if (grade >= 90 && grade <= 100) {
+//         return "Відмінно";
+//     } else if (grade <= 89 && grade >= 75) {
+//         return "Добре";
+//     } else if (grade <= 74 && grade >= 50) {
+//         return "Задовільно";
+//     } else {
+//         return "Незадовільно";
+//     }
+// }
+// console.log(foo(95)); // Відмінно
+// console.log(foo(80)); // Добре
+// console.log(foo(60)); // Задовільно
+// console.log(foo(40)); // Незадовільно
+
+// Задача-7
+// Напишіть функцію, яка приймає два параметри: dayOfWeek та isHoliday. Якщо dayOfWeek це "Saturday" або "Sunday" або isHoliday є true, поверніть "Вихідний", в іншому випадку поверніть "Робочий день".
+
+// function foo(dayOfWeek, isHoliday) {
+//     if (dayOfWeek === "Saturday" || dayOfWeek === "Sunday" || isHoliday) {
+//         return "Вихідний";
+//     } else {
+//         return "Робочий день";
+//     }
+// }
+// console.log(foo("Monday", false));
+// console.log(foo("Sunday", false));
+// console.log(foo("Wednesday", true));
+
+
+// // Задача-8
+// Напишіть функцію, яка приймає один параметр year. Якщо рік ділиться на 4 і не ділиться на 100, або ділиться на 400, поверніть "Високосний рік", в іншому випадку - "Звичайний рік".
+
+// function foo(year) {
+//     if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+//         return "Високосний рік";
+//     } else {
+//         return "Звичайний рік";
+//     }
+// }
+// console.log(foo(2024));
+// console.log(foo(1900));
+// console.log(foo(2000));
+// console.log(foo(2023));
+
+
+// Задача-9
+// Напишіть функцію, яка приймає два параметри: hasInvitation (булевий) і isFriend (булевий). Якщо у вас є запрошення або ви друг, поверніть "Ви запрошені", в іншому випадку поверніть "Вхід заборонено".
+
+// function foo(hasInvitation, isFriend) {
+//     if (hasInvitation || isFriend) {
+//         return "Ви запрошені";
+//     } else {
+//         return "Вхід заборонено";
+//     }
+// }
+// console.log(foo(true, false));
+// console.log(foo(false, true));
+// console.log(foo(false, false));
+// console.log(foo(true, true));
+
+
+// Задача-10
+// Напишіть функцію, яка приймає вік особи (age). Якщо вік менший за 12, поверніть "Дитина", якщо від 12 до 18, поверніть "Підліток", якщо від 18 до 60, поверніть "Дорослий", більше 60 - "Пенсіонер".
+
+// function foo(age) {
+//     if (age < 12) {
+//         return "Дитина";
+//     } else if (age < 18) {
+//         return "Підліток";
+//     } else if (age < 60) {
+//         return "Дорослий";
+//     } else {
+//         return "Пенсіонер";
+//     }
+// }
+// console.log(foo(8));   // Дитина
+// console.log(foo(15));  // Підліток
+// console.log(foo(30));  // Дорослий
+// console.log(foo(70));  // Пенсіонер
+// Задача-11
+// Напишіть функцію, яка приймає два параметри: isLoggedIn (булевий) та hasAdminRights (булевий). Якщо ви увійшли в систему і маєте права адміністратора, поверніть "Адмін-сторінка", якщо увійшли, але не є адміністратором, поверніть "Користувач", в іншому випадку - "Гість".
+
+// function foo(isLoggedIn, hasAdminRights) {
+//     if (hasAdminRights && isLoggedIn) {
+//         return "Адмін-сторінка";
+//     } else if (isLoggedIn && !hasAdminRights) {
+//         return "Користувач";
+//     } else {
+//         return "Гість";
+//     }
+// }
+// console.log(foo(true, true));   // "Адмін-сторінка"
+// console.log(foo(true, false));  // "Користувач"
+// console.log(foo(false, false)); // "Гість"
+
+//  Задача-12
+// Напишіть функцію, яка приймає один параметр speed. Якщо швидкість менша за 60 км/год, поверніть "Безпечно", якщо від 60 до 100 км/год, поверніть "Увага", якщо більше 100 км/год, поверніть "Небезпечно".
+
+// function foo(speed) {
+//     if (speed <= 60) {
+//         return "Безпечно";
+//     } else if (speed > 60 && speed <= 100) {
+//         return "Увага";
+//     } else  {
+//         return "Небезпечно";
+//     }
+// }
+// console.log(foo(50));
+// console.log(foo(80));
+// console.log(foo(120));
+
+
+// Задача-13
+// Напишіть функцію, яка приймає два параметри: time та isWeekend. Якщо time менше 12 і це не вихідний день, поверніть "Ранок буднього дня", якщо більше 12 і менше 18 і це вихідний, поверніть "День вихідного дня", в іншому випадку поверніть "Вечір".
+
+// function foo(time, isWeekend) {
+//     if (time <= 12 && !isWeekend) {
+//         return "Ранок буднього дня";
+//     } else if (time > 12 && time <= 18 && isWeekend) {
+//         return "День вихідного дня";
+//     } else {
+//         return "Вечір";
+//     }
+// }
+// console.log(foo(9, false));
+// console.log(foo(14, true));
+// console.log(foo(20, false));
+// console.log(foo(10, true));
+
+
+// Задача-14
+// Напишіть функцію, яка приймає два параметри: hasGlutenAllergy (булевий) та containsGluten (булевий). Якщо у вас є алергія на глютен і продукт містить глютен, поверніть "Не можна їсти", в іншому випадку поверніть "Можна їсти".
+
+// function foo(hasGlutenAllergy, containsGluten) {
+//     if (hasGlutenAllergy && containsGluten) {
+//         return "Не можна їсти";
+//     } else {
+//         return "Можна їсти";
+//     }
+// }
+// console.log(foo(true, true));
+// console.log(foo(true, false));
+// console.log(foo(false, true));
+// console.log(foo(false, false));
+
+
+// Задача-15
+// Напишіть функцію, яка приймає один параметр age. Якщо вік менше 18, поверніть "Не можна купувати алкоголь", якщо 18 або більше, поверніть "Можна купувати алкоголь".
+
+// function foo(age) {
+//     if (age < 18) {
+//         return "Не можна купувати алкоголь";
+//     } else {
+//         return "Можна купувати алкоголь";
+//     }
+// }
+// console.log(foo(16));
+// console.log(foo(18));
+// console.log(foo(25));
+
+
+//  Задача-16
+// Напишіть функцію, яка приймає один параметр isSunny (булевий). Якщо сонячно, поверніть "Вийдемо на прогулянку", якщо ні, поверніть "Залишимося вдома".
+
+// function foo(isSunny) {
+//     if (isSunny) {
+//         return "Вийдемо на прогулянку";
+//     } else {
+//         return "Залишимося вдома";
+//     }
+// }
+// console.log(foo(true));
+// console.log(foo(false));
+
+
+// Задача-17
+// Напишіть функцію, яка приймає один параметр number. Якщо число парне, поверніть "Парне", якщо непарне, поверніть "Непарне".
+
+// function foo(number) {
+//     if (number % 2 === 0) {
+//         return "Парне";
+//     } else {
+//         return "Непарне";
+//     }
+// }
+// console.log(foo(4));
+// console.log(foo(7));
+
+
+// Задача-18
+// Напишіть функцію, яка приймає два параметри: password та confirmPassword. Якщо ці два паролі однакові, поверніть "Паролі збігаються", якщо ні, поверніть "Паролі не збігаються".
+
+// function foo(password, confirmPassword) {
+//     if (password === confirmPassword) {
+//         return "Паролі збігаються";
+//     } else {
+//          return "Паролі не збігаються";
+//     }
+// }
+// console.log(foo("12345", "12345")); // Паролі збігаються
+// console.log(foo("12345", "54321")); // Паролі не збігаються
+
+
+// Задача-19
+// Напишіть функцію, яка приймає один параметр temperature в градусах Цельсія. Якщо температура нижче 0, поверніть "Зима", якщо від 0 до 15, поверніть "Весна", якщо від 16 до 25, поверніть "Літо", якщо більше 25, поверніть "Осінь".
+
+
+// Задача-20
+// Напишіть функцію, яка приймає два параметри: number1 та number2. Якщо number1 більше number2, поверніть "Перше більше", якщо менше, поверніть "Перше менше", якщо рівні, поверніть "Рівні".
+
+// function foo(number1, number2) {
+//     if (number1 > number2) {
+//         return "Перше більше";
+//     } else if (number1 < number2) {
+//         return "Перше менше";
+//     } else {
+//         return "Рівні";
+//     }
+// }
+// console.log(foo(5, 3));
+// console.log(foo(2, 7));
+// console.log(foo(4, 4));
+
+
+// Задача-21
+// Напишіть функцію, яка приймає один параметр isBatteryFull (булевий). Якщо акумулятор повний, поверніть "Не потрібно заряджати", якщо ні, поверніть "Заряджати".
+
+// function foo(isBatteryFull) {
+//     if (isBatteryFull) {
+//         return "Не потрібно заряджати";
+//     } else {
+//         return "Заряджати";
+//     }
+// }
+// console.log(foo(true));
+// console.log(foo(false));
+
+
+// Задача-22
+// Напишіть функцію, яка приймає два параметри: isStudent (булевий) та hasID (булевий). Якщо ви студент і маєте посвідчення, поверніть "Вхід дозволено", якщо ні, поверніть "Вхід заборонено".
+
+// function foo(isStudent, hasID) {
+//     if (isStudent && hasID) {
+//         return "Вхід дозволено";
+//     } else {
+//         return "Вхід заборонено";
+//     }
+// }
+// console.log(foo(true, true));
+// console.log(foo(true, false));
+// console.log(foo(false, true));
+// console.log(foo(false, false));
+
+
+// Задача-23
+// Напишіть функцію, яка приймає два параметри: temperature та isRaining. Якщо температура менша за 0 або йде дощ, поверніть "Потрібно носити теплий одяг", в іншому випадку поверніть "Легка одяг".
+
+// function foo(temperature, isRaining) {
+//     if (temperature <= 0 || isRaining) {
+//         return "Потрібно носити теплий одяг";
+//     } else {
+//         return "Легка одяг";
+//     }
+// }
+// console.log(foo(-5, false));
+// console.log(foo(10, true));
+// console.log(foo(15, false));
+
+
+// Задача-24
+// Напишіть функцію, яка приймає два параметри: hasCar (булевий) та hasLicense (булевий). Якщо у вас є автомобіль та водійські права, поверніть "Можете водити машину", якщо ні, поверніть "Водити заборонено".
+
+// function foo(hasCar, hasLicense) {
+//     if (hasCar && hasLicense) {
+//         return "Можете водити машину";
+//     } else {
+//         return "Водити заборонено";
+//     }
+// }
+// console.log(foo(true, true));
+// console.log(foo(true, false));
+// console.log(foo(false, true));
+// console.log(foo(false, false));
+
+// Задача-25
+// Напишіть функцію, яка приймає два параметри: age та hasParentConsent (булевий). Якщо вік менше 18 і немає батьківської згоди, поверніть "Доступ заборонено", якщо старше 18 або є згода батьків, поверніть "Доступ дозволено".
+
+// function foo(age, hasParentConsent) {
+//     if (age < 18 && !hasParentConsent) {
+//         return "Доступ заборонено";
+//     } else {
+//         return "Доступ дозволено";
+//     }
+// }
+// console.log(foo(16, false));
+// console.log(foo(16, true));
+// console.log(foo(20, false));
+
+
+// Задача-26
+// Напишіть функцію, яка приймає два параметри: isVegetarian (булевий) та containsMeat (булевий). Якщо ви вегетаріанець і страва містить м'ясо, поверніть "Не можна їсти", в іншому випадку поверніть "Можна їсти".
+
+// function foo(isVegetarian, containsMeat) {
+//     if (isVegetarian && containsMeat) {
+//         return "Не можна їсти";
+//     } else {
+//         return "Можна їсти";
+//     }
+// }
+// console.log(foo(true, true));
+// console.log(foo(true, false));
+// console.log(foo(false, true));
+// console.log(foo(false, false));
+
+
+// Задача-27
+// Напишіть функцію, яка приймає два параметри: hoursWorked та overtime. Якщо ви працювали більше 40 годин або у вас є понаднормові, поверніть "Отримуєте бонус", в іншому випадку поверніть "Без бонусу".
+
+// function foo(hoursWorked, overtime) {
+//     if (hoursWorked > 40 || overtime > 0) {
+//         return "Отримуєте бонус";
+//     } else {
+//         return "Без бонусу";
+//     }
+// }
+// console.log(foo(45, 0));
+// console.log(foo(38, 2));
+// console.log(foo(40, 0));
+
+
+// Задача-28
+// Напишіть функцію, яка приймає два параметри: number та isPositive. Якщо число більше 0 і isPositive дорівнює true, поверніть "Це позитивне число", в іншому випадку поверніть "Це не позитивне число".
+
+// function foo(number, isPositive) {
+//     if (number > 0 && isPositive===true) {
+//         return "Це позитивне число";
+//     } else {
+//         return "Це не позитивне число";
+//     }
+// }
+// console.log(foo(5, true));
+// console.log(foo(-3, true));
+// console.log(foo(10, false));
+
+
+// Задача-29
+// Напишіть функцію, яка приймає два параметри: temperature та isSunny. Якщо температура більше 20 і це сонячний день, поверніть "Час для прогулянки", в іншому випадку поверніть "Залишимося вдома".
+
+// function foo(temperature, isSunny) {
+//     if (temperature > 20 && isSunny) {
+//         return "Час для прогулянки";
+//     } else {
+//         return "Залишимося вдома";
+//     }
+// }
+// console.log(foo(25, true));
+// console.log(foo(18, true));
+// console.log(foo(22, false));
+
+
+// Задача-30
+// Напишіть функцію, яка приймає два параметри: weight та height. Якщо вага більше 100 кг і зріст менше 150 см, поверніть "Перевищено допустимий ліміт", в іншому випадку поверніть "У межах норми".
+
+// function foo(weight, height) {
+//     if (weight > 100 && height < 150) {
+//         return "Перевищено допустимий ліміт";
+//     } else {
+//         return "У межах норми";
+//     }
+// }
+// console.log(foo(110, 145));
+// console.log(foo(90, 160));
+
+
+// Задача-31
+// Напишіть функцію, яка приймає два параметри: year та isLeapYear (булевий). Якщо рік ділиться на 4 і isLeapYear є true, поверніть "Це високосний рік", в іншому випадку поверніть "Звичайний рік".
+
+// function foo(year, isLeapYear) {
+//     if (year % 4 === 0 && isLeapYear === true) {
+//         return "Це високосний рік";
+//     } else {
+//         return "Звичайний рік";
+//     }
+// }
+// console.log(foo(2024, true));
+// console.log(foo(2023, false));
+// console.log(foo(2024, false));
+
+
+// Задача-32
+// Напишіть функцію, яка приймає три параметри: age, isStudent (булевий), і isSeniorCitizen (булевий). Якщо вік менший за 18 або є студентом, або якщо старший за 65 і є пенсіонером, поверніть "Знижка на квиток", в іншому випадку поверніть "Повна вартість квитка".
+
+// function foo(age, isStudent, isSeniorCitizen) {
+//     if (age < 18 || isStudent ||(age>65 && isSeniorCitizen)) {
+//         return "Знижка на квиток";
+//     } else {
+//         return "Повна вартість квитка";
+//     }
+// }
+// console.log(foo(16, false, false));
+// console.log(foo(20, true, false));
+// console.log(foo(70, false, true));
+// console.log(foo(30, false, false));
+
+
+// Задача-33
+// Напишіть функцію, яка приймає три параметри: temperature, isRaining, і hasUmbrella (булевий). Якщо температура більше 25 і йде дощ, і у вас є парасоля, поверніть "Візьміть парасолю та одягніться легше", якщо немає парасолі, поверніть "Залишайтеся вдома", в іншому випадку поверніть "Виходьте на прогулянку".
+
+// function foo(temperature, isRaining, hasUmbrella) {
+//     if (temperature > 25 && isRaining && hasUmbrella) {
+//         return "Візьміть парасолю та одягніться легше";
+//     } else if (temperature > 25 && isRaining && !hasUmbrella) {
+//         return "Залишайтеся вдома";
+//     } else {
+//         return "Виходьте на прогулянку";
+//     }
+// }
+// console.log(foo(28, true, true));
+// console.log(foo(28, true, false));
+// console.log(foo(20, false, false));
+
+
+// Задача-34
+// Напишіть функцію, яка приймає три параметри: isMember (булевий), hasCoupon (булевий), і purchaseAmount. Якщо ви є членом клубу або маєте купон, і сума покупки більше 100, поверніть "Отримаєте знижку", в іншому випадку поверніть "Знижка не доступна".
+
+// function foo(isMember, hasCoupon, purchaseAmount) {
+//     if ((isMember || hasCoupon) && purchaseAmount > 100) {
+//         return "Отримаєте знижку";
+//     } else {
+//         return "Знижка не доступна";
+//     }
+// }
+// console.log(foo(true, false, 150));
+// console.log(foo(false, true, 80));
+// console.log(foo(false, false, 200));
+// console.log(foo(true, true, 120));
+
+
+
+// Задача-36
+// Напишіть функцію, яка приймає три параметри: isOnline (булевий), hasCamera (булевий), і hasMicrophone (булевий). Якщо ви онлайн і маєте камеру або мікрофон, поверніть "Готові до відеоконференції", якщо ви не онлайн або не маєте жодного з них, поверніть "Немає можливості для відеоконференції".
+
+// function foo(isOnline, hasCamera, hasMicrophone) {
+//     if (isOnline && (hasCamera || hasMicrophone)) {
+//         return "Готові до відеоконференції";
+//     } else {
+//         return "Немає можливості для відеоконференції";
+//     }
+// }
+// console.log(foo(true, true, false));
+// console.log(foo(true, false, false));
+// console.log(foo(false, true, true));
+
+
+// Задача-37
+// Напишіть функцію, яка приймає три параметри: currentTime, isWeekend, і isHoliday. Якщо зараз менше 8 ранку і це не вихідний день, і це не свято, поверніть "Скоро час на роботу", в іншому випадку поверніть "Вільний час".
+
+// function foo(currentTime, isWeekend, isHoliday) {
+//     if (currentTime < 8 && !isWeekend && !isHoliday) {
+//         return "Скоро час на роботу";
+//     } else {
+//         return "Вільний час";
+//     }
+// }
+// console.log(foo(7, false, false));
+// console.log(foo(9, false, false));
+// console.log(foo(7, true, false));
+// console.log(foo(7, false, true));
+
+
+// Задача-38
+// Напишіть функцію, яка приймає три параметри: temperature, isSnowing, і hasHeater (булевий). Якщо температура нижче 0 і йде сніг, і у вас є обігрівач, поверніть "Тепло та затишно", якщо обігрівача немає, поверніть "Потрібно зігрітися", в іншому випадку поверніть "Погода нормальна".
+
+// function foo(temperature, isSnowing, hasHeater) {
+//     if (temperature < 0 && isSnowing && hasHeater) {
+//         return "Тепло та затишно";
+//     } else if (temperature < 0 && isSnowing && !hasHeater) {
+//         return "Потрібно зігрітися";
+//     } else {
+//         return "Погода нормальна";
+//     }
+// }
+// console.log(foo(-5, true, true));
+// console.log(foo(-5, true, false));
+// console.log(foo(5, false, true));
+
+
+// Задача-39
+// Напишіть функцію, яка приймає три параметри: age, hasDriverLicense (булевий), і isInsured (булевий). Якщо ви старше 18 років, маєте водійське посвідчення і страховку, поверніть "Можна керувати автомобілем", в іншому випадку поверніть "Не можна керувати автомобілем".
+
+// function foo(age, hasDriverLicense, isInsured) {
+//     if (age > 18 && hasDriverLicense && isInsured) {
+//         return "Можна керувати автомобілем";
+//     }else {
+//         return "Не можна керувати автомобілем";
+//     }
+// }
+// console.log(foo(20, true, true));
+// console.log(foo(17, true, true));
+// console.log(foo(25, false, true));
+// console.log(foo(30, true, false));
+
+
+// Задача-40
+// Напишіть функцію, яка приймає три параметри: currentDay, hasMeeting (булевий), і isHoliday. Якщо сьогодні понеділок, середа або п'ятниця, і у вас є зустріч, і це не свято, поверніть "Є зустріч", в іншому випадку поверніть "Немає зустрічі".
+
+// function foo(currentDay, hasMeeting, isHoliday) {
+//     if ((currentDay==="monday" ||currentDay ==="wednesday"|| currentDay==="friday") && hasMeeting && !isHoliday) {
+//         return "Є зустріч";
+//     } else {
+//         return "Немає зустрічі";
+//     }
+// }
+// console.log(foo("monday", true, false));
+// console.log(foo("tuesday", true, false));
+// console.log(foo("wednesday", false, false));
+// console.log(foo("friday", true, true));
+
+
+// Задача-41
+// Напишіть функцію, яка приймає три параметри: itemPrice, isDiscounted (булевий), і discountAmount. Якщо ціна товару більше 1000, і він знижений на 10% або більше, поверніть "Скидка доступна", в іншому випадку поверніть "Скидка не доступна".
+
+// function foo(itemPrice, isDiscounted, discountAmount) {
+//     if (itemPrice > 1000 && isDiscounted && discountAmount >= 10) {
+//         return "Скидка доступна";
+//     } else {
+//         return "Скидка не доступна";
+//     }
+    
+// }
+// console.log(foo(1200, true, 15));
+// console.log(foo(900, true, 15));
+
+
+// Задача-42
+// Напишіть функцію, яка приймає один параметр dayOfWeek. Використовуючи switch, поверніть "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота" або "Неділя" залежно від введеного числа (1 - Понеділок, 2 - Вівторок, і т.д.). Якщо введене число не в діапазоні від 1 до 7, поверніть "Невідомий день".
+
+// function foo(dayOfWeek) {
+//     switch (dayOfWeek) {
+//         case 1:
+//             return "Понеділок";
+//         case 2:
+//             return "Вівторок";
+//         case 3:
+//             return "Середа";
+//         case 4:
+//             return "Четвер";
+//         case 5:
+//             return "П'ятниця";
+//         case 6:
+//             return "Субота";
+//         case 7:
+//             return "Неділя";
+//         default:
+//             return "Невідомий день"
+//     }
+// }
+// console.log(foo(1));
+// console.log(foo(5));
+// console.log(foo(8));
+// console.log(foo(7));
+
+
+// Задача-43
+// Напишіть функцію, яка приймає один параметр grade. Використовуючи switch, поверніть "Відмінно", "Добре", "Задовільно", "Незадовільно" в залежності від оцінки: "A" - "Відмінно", "B" - "Добре", "C" - "Задовільно", "D" або "F" - "Незадовільно".
+
+// function foo(grade) {
+//     switch (grade) {
+//         case "A":
+//             return "Відмінно";
+//         case "B":
+//             return "Добре";
+//         case "C":
+//             return "Задовільно";
+//         case "D":
+     //    case "F":    
+//             return "Незадовільно"
+//         default:
+//             return "Невідома оцінка";
+//     }
+// }
+// console.log(foo('A'));
+// console.log(foo('C'));
+// console.log(foo('F'));
+// console.log(foo('B'));
+
+
+// Задача-44
+// Напишіть функцію, яка приймає один параметр fruit. Використовуючи switch, поверніть "Цитрус", "Яблуко", "Груша", або "Ягода" в залежності від введеного фрукта. Наприклад, "Лимон", "Апельсин", "Грейпфрут" повинні повернути "Цитрус", "Яблуко" - "Яблуко", "Груша" - "Груша", "Полуниця", "Малина", "Чорниця" - "Ягода".
+
+// function foo(fruit) {
+//     switch (fruit) {
+//         case "Лимон":
+//         case "Апельсин":
+//         case "Грейпфрут":
+//             return "Цитрус";
+//         case "Яблуко":
+//             return "Яблуко";
+//         case "Груша":
+//             return "Груша";
+//         case "Полуниця":
+//         case "Малина":
+//         case "Чорниця":
+//             return "Ягода";
+//         default:
+//             return "Невідомий фрукт";
+        
+//     }
+// }
+// console.log(foo("Лимон")); 
+// console.log(foo("Яблуко"));
+// console.log(foo("Малина")); 
+// console.log(foo("Ківі")); 
+
+
+// Задача-45
+// Напишіть функцію, яка приймає один параметр vehicleType. Використовуючи switch, поверніть "Легковий автомобіль", "Вантажівка", "Мотоцикл", або "Інше" в залежності від введеного типу транспортного засобу. Наприклад, "Car" - "Легковий автомобіль", "Truck" - "Вантажівка", "Motorcycle" - "Мотоцикл", і інші випадки - "Інше".
+
+// function foo(vehicleType) {
+//     switch (vehicleType) {
+//         case "Car":
+//             return "Легковий автомобіль";
+//         case "Truck":
+//             return "Вантажівка";
+//         case "Motorcycle":
+//             return "Мотоцикл";
+//         default:
+//             return "Інше";
+//     }
+// }
+// console.log(foo("Car")); 
+// console.log(foo("Truck")); 
+// console.log(foo("Motorcycle")); 
+// console.log(foo("Bicycle")); 
+
+
+// Задача-46 Напишіть функцію, яка приймає один параметр animal. Використовуючи switch, поверніть "Ссавець", "Птах", "Риба", або "Рептилія" в залежності від введеної тварини. Наприклад, "Кішка", "Собака", "Кінь" - "Ссавець", "Голуб", "Орлан", "Горобець" - "Птах", "Лосось", "Тунець", "Тріска" - "Риба", "Ящірка", "Черепаха", "Змія" - "Рептилія".
+
+// function foo(animal) {
+//      switch (animal) {
+//           case "Кішка":
+//           case "Собака":
+//           case "Кінь":
+//                return "Ссавець";
+//           case "Голуб":
+//           case "Орлан":
+//           case "Горобець":
+//                return "Птах";
+//           case "Лосось":
+//           case "Тунець":
+//           case "Тріска":
+//                return "Риба";
+//           case "Ящірка":
+//           case "Черепаха":
+//           case "Змія":
+//                return "Рептилія";
+//           default:
+//                return "Інше";
+//      }
+// }
+// console.log(foo("Кішка"));
+// console.log(foo("Голуб")); 
+// console.log(foo("Крокодил")); 
+// console.log(foo("Орлан"));   
+// console.log(foo("Тунець"));   
+// console.log(foo("Змія"));     
+// console.log(foo("Жаба"));  
+
+
+// Задача-47
+// Напишіть функцію, яка приймає один параметр weather. Використовуючи switch, поверніть "Сонячно", "Хмарно", "Дощ", або "Сніг" в залежності від введеного типу погоди. Наприклад, "Sunny" - "Сонячно", "Cloudy" - "Хмарно", "Rainy" - "Дощ", "Snowy" - "Сніг".
+
+// function foo(weather) {
+//      switch (weather) {
+//           case "Sunny":
+//                return "Сонячно";
+//           case "Cloudy":
+//                return "Хмарно";
+//           case "Rainy":
+//                return "Дощ";
+//           case "Snowy":
+//                return "Сніг";
+//           default:
+//                return "Невідомий тип погоди";
+//      }
+// }
+// console.log(foo("Sunny")); 
+// console.log(foo("Rainy")); 
+// console.log(foo("Windy")); 
+
+
+// Задача-48
+// Напишіть функцію, яка приймає один параметр mood. Використовуючи switch, поверніть "Щасливий", "Сумний", "Злий", або "Здивований" в залежності від введеного настрою. Наприклад, "Happy" - "Щасливий", "Sad" - "Сумний", "Angry" - "Злий", "Surprised" - "Здивований".
+
+// function foo(mood) {
+//      switch (mood) {
+//           case "Happy":
+//                return "Щасливий";
+//           case "Sad":
+//                return "Сумний";
+//           case "Angry":
+//                return "Злий";
+//           case "Surprised":
+//                return "Здивований";
+//           default:
+//                return "Інший настрій";
+//      }
+// }
+// console.log(foo("Happy"));    
+// console.log(foo("Angry"));     
+// console.log(foo("Calm"));    
+
+
+// Задача-49
+// Напишіть функцію, яка приймає один параметр month. Використовуючи switch, поверніть назву сезону ("Весна", "Літо", "Осінь", "Зима") в залежності від місяця. Наприклад, "Березень", "Квітень", "Травень" - "Весна", "Червень", "Липень", "Серпень" - "Літо", "Вересень", "Жовтень", "Листопад" - "Осінь", "Грудень", "Січень", "Лютий" - "Зима".
+
+// function foo(month) {
+//      switch (month) {
+//           case "Березень":
+//           case "Квітень":
+//           case "Травень":
+//                return "Весна";
+//           case "Червень":
+//           case "Липень":
+//           case "Серпень":
+//                return "Літо";
+//           case "Вересень":
+//           case "Жовтень":
+//           case "Листопад":
+//                return "Осінь";
+//           case "Грудень":
+//           case "Січень":
+//           case "Лютий":
+//                return "Зима";
+//           default:
+//                return "Невідома пора";
+//      }
+// }
+// console.log(foo("Липень")); 
+// console.log(foo("Грудень")); 
+// console.log(foo("Січ"));
+
+
+// Задача-50
+// Напишіть функцію, яка приймає один параметр color. Використовуючи switch, поверніть "Теплий колір" або "Холодний колір" в залежності від кольору. Наприклад, "Red", "Orange", "Yellow" - "Теплий колір", "Blue", "Green", "Purple" - "Холодний колір".
+
+// function foo(color) {
+//      switch (color) {
+//           case "Red":
+//           case "Orange":
+//           case "Yellow":
+//                return "Теплий колір";
+//           case "Blue":
+//           case "Green":
+//           case "Purple":
+//                return "Холодний колір";
+//           default:
+//                return "Інший колір";
+//      }
+// }
+// console.log(foo("Red"));    
+// console.log(foo("Blue"));  
+// console.log(foo("Black"));  
+
+
+// Задача-51
+// Напишіть функцію, яка приймає один параметр continent. Використовуючи switch, поверніть назву континенту або "Невідомий континент" в залежності від введеного значення. Наприклад, "Africa", "Europe", "Asia", "North America", "South America", "Antarctica", "Australia" - відомі континенти, інші випадки - "Невідомий континент".
+
+// function foo(continent) {
+//      switch (continent) {
+//           case "Africa":
+//           case "Europe":
+//           case "Asia":
+//           case "North America":
+//           case "South America":
+//           case "Antarctica":
+//           case "Australia":
+//                return "Відомий континент";
+//           default:
+//                return "Невідомий континент";
+//      }
+// }
+// console.log(foo("Asia")); 
+// console.log(foo("Oceania")); 
+
+// Task 1
+// Яким буде результат виразів?
+
+// console.log(true && 3);
+
+// console.log(false && 3);
+
+// console.log(true && 4 && 'kiwi');
+
+// console.log(true && 0 && 'kiwi');
+
+// console.log(true || 3);
+
+// console.log(true || 3 || 4);
+
+// console.log(true || false || 7);
+
+// console.log(null || 2 || undefined);
+
+// console.log((1 && null && 2) > 0);
+
+// console.log(null || (2 && 3) || 4);
+// console.log(1 && 5);
+// console.log(5 && 1);
+// console.log(0 && 2);
+// console.log(2 && 0);
+// console.log('' && 'Mango');
+// console.log('Mango' && '');
+// console.log('Mango' && 'Poly');
+// console.log('Poly' && 'Mango');
+// console.log(true || false);
+// console.log(false || true);
+// console.log(true || true);
+
+// console.log(3 || false);
+// console.log(false || 3);
+// console.log(3 || true);
+// console.log(true || 3);
+// console.log(!true);
+// console.log(!false);
+// console.log(!3);
+// console.log(!'Mango');
+// console.log(!0);
+// console.log(!'');
+
+// const isOnline = true;
+// const isNotOnline = !isOnline;
+
+// console.log(true && false);
+// console.log(false && true);
+// console.log(true && true);
+// console.log(false && false);
+
+// console.log(true || false);
+// console.log(false || true);
+// console.log(true || true);
+// console.log(false || false);
+
+// console.log(!true);
+// console.log(!false);
+// console.log(!!true);
+// console.log(!!false);
+
+// console.log(1 === 1 && 2 === 2);
+// console.log(1 === 2 && 2 === 2);
+// console.log(1 === 1 || 2 === 2);
+// console.log(1 === 2 || 2 === 2);
+
+// console.log(1 > 2 && 2 < 3);
+// console.log(1 < 2 && 2 < 3);
+// console.log(1 > 2 || 2 < 3);
+// console.log(1 < 2 || 2 < 3);
+
+// console.log(0 && 3);
+// console.log(3 && 0);
+// console.log(0 || 3);
+// console.log(3 || 0);
+
+// console.log('' || 'apple');
+// console.log('orange' || '');
+// console.log('' && 'banana');
+// console.log('grape' && '');
+
+// console.log(0 || false);
+// console.log(false || 0);
+// console.log(1 && 'cherry');
+// console.log('banana' && 1);
+// console.log(null && 'pear');
+// console.log('peach' && undefined);
+// console.log(undefined || 'plum');
+// console.log('melon' || null);
+// console.log(undefined && false);
+// console.log(true || 'watermelon');
+// console.log('watermelon' || true);
+// console.log(false && 'pineapple');
+// console.log('pineapple' && false);
+// console.log(NaN || 'kiwi');
+// console.log('kiwi' || NaN);
+// console.log(NaN && 'mango');
+// console.log('mango' && NaN);
+// console.log(Infinity || 'apricot');
+// console.log('apricot' || Infinity);
+// console.log(Infinity && 'blueberry');
+// console.log('blueberry' && Infinity);
+// console.log(null || undefined);
+
+// Напиши цикл, який виведе на консоль числа від 1 до 10.
+
+// for (let i = 1; i <= 10; i ++ ) {
+//   console.log(i);
+// }
+
+// Напиши цикл, який виведе на консоль парні числа від 1 до 20.
+
+// for (let i = 0; i <= 20;i+=2){
+//      console.log(i);
+// }
+
+// Напиши цикл, який знайде та виведе на консоль суму всіх чисел від 1 до 100.
+
+// let sum = 0;
+// for (let i = 1; i <= 100; i++){
+//      sum += i;
+// }
+// console.log("Сума чисел від 1 до 100:", sum);
+
+// Напиши цикл, який виведе на консоль таблицю множення для числа 7 (від 1 до 10).
+// const number = 7;
+// for ( let i = 1; i <= 10; i++){
+//     console.log(`${number} * ${i} = ${number * i}`);
+// }
+
+
+
+// Напиши цикл, який виведе кожну другу літеру рядочку "Hello world"
+
+// const str = "Hello world";
+// for (let i = 0; i < str.length; i+=2){
+//      console.log(str[i]);
+// }
+
+// Напиши цикл, який виведе кожну літеру рядочку "Hello world" у зворотньому порядку.
+
+// const str = "Hello world";
+// for (let i = str.length; i >=0; i --){
+//      console.log(str[i]);
+// }
+
+
+// Напиши цикл, який виведе кожну літеру рядочку "Hello world" поки не зустріне пробіл.
+
+
+
+// Напиши цикл, який виведе на консоль кожну другу літеру слова "JavaScript".
+// const str = "JavaScript";
+// for (let i = 0; i < str.length; i +=2){
+//      console.log(str[i]);
+// }
+
+// Напиши функцію, яка приймає рядок та повертає перевернутий рядок
+
+
+
+
+// Напиши функцію, яка приймає рядок та повертає рядок де кожен другий символ у верхньому регістрі
+
+// Напиши функцію getString(str1, str2, count). Функція повинна додати str2 до рядочка str1 стільки разів скільки вказали у параметрі count.
+
+
+//Масиви
+// Напиши функцію, яка приймає масив та виводить кожен елемент масиву у консоль.
+// function printArrayElements(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+//   }
+// }
+// const fruits = ["apple", "banana", "cherry","orange"];
+// printArrayElements(fruits);
+
+
+// Напиши функцію, яка приймає масив та виводить кожен парний елемент масиву у консоль.
+
+// function foo(arr) {
+//      for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       console.log(arr[i]);
+//     }
+//      }
+// }
+// foo([1, 2, 3, 4, 5, 6]);
+
+
+// Напиши функцію, яка приймає масив чисел та виводить лише парні числа у консоль.
+
+// function foo(arr) {
+//      for (let i = 0; i < arr.length; i++){
+//           if (arr[i] % 2 === 0) {
+//                console.log(arr[i]);
+//           }
+//      }
+// }
+// foo([1, 2, 3, 4, 5, 6]);
+
+// Напиши функцію, яка приймає два параметри (arr, max). Де arr - це масив чисел. Потрібно вивести лише ті елементи масиву які більші за max.
+
+// function foo(arr,max) {
+//      for (let i = 0; i < arr.length; i++){
+//           if (arr[i] > max) {
+//                console.log(arr[i]);
+//           }
+//      }
+// }
+// foo([3, 10, 7, 15, 2,5,52], 8);
+
+
+// Напиши функцію яка приймає масив та повертає суму всіх чисел у масиві.
+
+// function foo(arr) {
+//      let sum = 0;
+//      for (let i = 0; i < arr.length; i++){
+//           sum += arr[i];
+//      }
+//      return sum;
+// }
+// console.log (foo([3, 10, 7, 15, 2,5,52]));
+
+
+// Напиши функцію slugify(title), яка приймає заголовок статті, параметр title і повертає slug, створений із цього рядка.
+
+// Значенням параметра title будуть рядки, слова яких розділені лише пробілами.
+// Усі символи slug повинні бути в нижньому регістрі.
+// Усі слова slug повинні бути розділені тире.
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+
+
+// function slugify(title) {
+//      let slug = title.toLowerCase();
+//      return slug.split(" ").join("-");
+// }
+// console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
+// console.log(slugify("English for developer")); // "english-for-developer"
+// console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+
+// Напиши функцію під назвою makeArray, яка приймає три параметри: firstArray (масив), secondArray (масив) і maxLength (число). Функція повинна створювати новий масив, який містить усі елементи з firstArray, а потім усі елементи з secondArray.
+
+// Якщо кількість елементів у новому масиві перевищує maxLength, функція повинна повернути копію масиву з довжиною maxLength елементів.
+// В іншому випадку функція повинна повернути весь новий масив.
+
+
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+
+
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//      let newArray = firstArray.concat(secondArray) ;
+//      if (newArray.length > maxLength) {
+//           return newArray.slice(0, maxLength);
+//      } else {
+//           return newArray;
+//      }
+// }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+
+
+// Напиши функцію filterArray(numbers, value), яка приймає масив чисел (numbers) та значення (value) як параметри. Функція повинна повертати новий масив лише тих чисел із масиву numbers, які більші за значення value.
+
+// Усередині функції:
+
+// Створи порожній масив, у який будеш додавати підходящі числа.
+// Використай цикл для ітерації кожного елемента масиву numbers.
+// Використовуй умовний оператор if усередині циклу для перевірки кожного елемента и додавання до свого масиву.
+// Поверни свій новий масив з підходящими числами як результат.
+
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+
+// function filterArray(numbers, value) {
+//      let newArr = [];
+//      for (let i = 0; i < numbers.length; i++){
+//           if (numbers[i] > value) {
+//              newArr.push(numbers[i]);
+//           }
+//      }
+//      return newArr;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+
+// Напиши функцію яка приймає масив та елемент для пошуку. Фукнція повинна порахувати скільки разів шуканий елемент зустрічається у масиві.
+
+// function toSearch(arr, element) {
+//      let newArr = [];
+//      for (let i = 0; i < arr.length; i++){
+//           if (arr[i] === element) {
+//                newArr++;
+//           }
+//      }
+//      return newArr;
+// }
+// const numbers = [1, 2, 3, 2, 4, 2, 5];
+// console.log(toSearch(numbers, 2)); // Виведе: 3
+
+// Напиши функцію яка приймає масив чисел. Функція повинна видалити усі негативні(відємні числа) з масиву та повернути новий масив.
+
+// function arr(num) {
+//      let newArr = [];
+//      for (let i = 0; i < num.length; i++){
+//           if (num[i] > 0) {
+//             newArr.push(num[i]);
+//           }
+//      }
+//      return newArr;
+// }
+// const num = [1, 2, 3, 2, -4, -2, 5];
+// console.log(arr(num));
+
+
+// Напиши функцію яка приймає масив рядочків. Потрібно змінити кожен елемент масиву наступним чином - якщо довжина рядочку менша за 6 до привести рядок до нижнього регістру, в іншому випадку привести до верхнього регістру.
+
+// function arr(str) {
+//      if (str.length < 6) {
+//           return str.toLowerCase();
+//      } else {
+//           return str.toUpperCase();
+//      }
+// }
+// console.log(arr("Hi"));        
+// console.log(arr("JavaScript")); 
+
+// Напиши функцію, яка приймає масив чисел і повертає новий масив, що містить лише непарні числа.
+
+// function arr(num) {
+//      let newNum = [];
+//      for (let i = 0; i < num.length; i++){
+//           if (num[i] % 2 !== 0) {
+//                newNum.push(num[i]);
+//           }
+//      }
+//      return newNum;
+// }
+// const num = [1, 2, 3, 2, -4, -2, 5, -5];
+// console.log(arr(num));
+
+
+// Напиши функцію, яка приймає масив чисел і повертає новий масив, де кожне число помножене на індекс, за яким воно знаходиться в масиві.
+
+
+
+// Напиши функцію, яка приймає масив чисел і повертає новий масив, що містить лише числа, які діляться на 3.
+
+// function arr(num) {
+//      let newNum = [];
+//      for (let i = 0; i < num.length; i++){
+//           if (num[i] % 3 === 0) {
+//                newNum.push(num[i]);
+//           }
+//      }
+//      return newNum;
+// }
+// const num = [1, 2, 3, 2, 6,33, -5,21,9];
+// console.log(arr(num));
+
+// Середні задачі
+// Напиши функцію яка приймає два масиви (arr1, arr2), та повертає новий масив де будуть лише ті елементи які зустрічаються і в arr1 і arr2.
+// Напиши функцію яка приймає два масиви (arr1, arr2), та повертає новий масив де будуть лише елементи масиву arr1 яких не має у масиві arr2.
+// Напиши функцію яка приймає масив та знаходить мінімальний елемент.
+// Напиши функцію яка приймає масив та знаходить максимальний елемент.
+// Напиши функцію яка приймає масив та повертає масив лише з тих елементів які більші за середнє значення всіх елементів масиву.
+// Напиши функцію яка приймає масив та повертає масив лише з тих елементів які більші за власний індекс.
+// Напишіть функці яка приймає масив чисел. Функція повинна занйти мінімальний елемент та видалити його з масиву.
+// Напиши функцію яка приймає два параметри start та end. Функія повина повернути масив де будуть числа з діапазону але лише ті у яких не має цифри 5. К прикладу числа (51, 25, 15,256) не підходять бо містять символ "5" у собі.
+// Складні
+// Напиши функцію, яка приймає массив чисел і повертає новий масив, де всі парні числа переміщені в початок, а всі непарні - в кінець.
+// Напиши функцію, яка приймає массив чисел і повертає новий массив, де кожен елемент є сумою усіх попередніх елементів.
+// Напиши функцію, яка приймає массив чисел і повертає новий массив, що містить лише унікальні числа.
+// Напиши функцію, яка приймає два масиви і повертає об'єднаний массив без дублювання елементів.
+// Напиши функцію, яка приймає массив чисел і повертає новий массив, де кожен елемент є середньоарифметичним всіх сусідніх елементів.
+// Напиши функцію, яка приймає массив чисел і повертає новий массив, де елементи відсортовані в порядку збільшення або зменшення.
+// Напиши функцію, яка приймає массив рядочків та сортує їх за довжиною елементів.
 
 
